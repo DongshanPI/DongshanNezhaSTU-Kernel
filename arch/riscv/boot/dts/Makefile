@@ -1,3 +1,4 @@
 # SPDX-License-Identifier: GPL-2.0
-subdir-y += sifive
-subdir-y += sunxi
+dtb-$(CONFIG_ARCH_SUNXI) += board.dtb
+dtb-$(CONFIG_SOC_SIFIVE) += hifive-unleashed-a00.dtb
+
